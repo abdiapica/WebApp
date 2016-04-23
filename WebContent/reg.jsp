@@ -25,6 +25,7 @@ int i=st.executeUpdate("insert into users values ('"+user+"','"+pwd+"','"+fname+
 
 out.println("Registered"); 
 
+con.close();
 
 %>
 <a href ="Login.html">Login</a><br/><br/>
