@@ -14,7 +14,7 @@ String userid=request.getParameter("usr");
 session.putValue("userid",userid); 
 String pwd=request.getParameter("pwd"); 
 Class.forName("com.mysql.jdbc.Driver"); 
-java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://192.168.51.122:3306/tomcat","root","root"); 
+java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://192.168.10.202:3306/users","apm","root"); 
 Statement st= con.createStatement(); 
 ResultSet rs=st.executeQuery("select * from users where userid='"+userid+"'"); 
 if(rs.next()) 

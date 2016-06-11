@@ -17,8 +17,8 @@ String fname=request.getParameter("fname");
 String lname=request.getParameter("lname"); 
 String email=request.getParameter("email"); 
 Class.forName("com.mysql.jdbc.Driver"); 
-java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://192.168.51.122:3306/tomcat",
-"root","root"); 
+java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://192.168.10.202:3306/users",
+"apm","root"); 
 Statement st= con.createStatement(); 
 ResultSet rs; 
 int i=st.executeUpdate("insert into users values ('"+user+"','"+pwd+"','"+fname+"',	'"+lname+"','"+email+"')"); 
